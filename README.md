@@ -46,5 +46,9 @@ lein run < caminho-do-arquivo-de-entrada >
 * Vejo que teríamos muitos aspectos incrementais nessa aplicação avaliativa, como por exemplo tratamento de exceções e cenários que diferenciados. Espero que possamos discutir essas melhorias numa próxima fase caso necessário.
 
 # Questão L4
- [L4_CAJU_CASE.pdf](https://github.com/user-attachments/files/16715823/L4_CAJU_CASE.pdf)
+* Documento onde eu discorro inicialmente sobre o que foi pedido na questão 4:
+* [L4_CAJU_CASE.pdf](https://github.com/user-attachments/files/16715823/L4_CAJU_CASE.pdf)
+* Imagem que ilustra um pouco uma das abordagens que eu poderia utilizar quando falamos dos pontos: concorrência, resiliência e garantia de integridade no fluxo do desafio técnico.
+
+![image](https://github.com/user-attachments/assets/268158f6-4aa8-448f-9f3e-c6269729a297)
 
