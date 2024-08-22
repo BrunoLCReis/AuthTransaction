@@ -1,6 +1,7 @@
 package com.app.controller;
 
 import com.app.service.AuthorizationService;
+import com.app.service.DebitService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -24,6 +25,9 @@ public class AuthorizationControllerTest {
 
     @MockBean
     private AuthorizationService authorizationService;
+
+    @MockBean
+    private DebitService debitService;
 
     @BeforeEach
     public void setup() {

@@ -1,6 +1,6 @@
 package com.app.controller;
 
-import com.app.domain.Response;
+import com.app.response.Response;
 import com.app.domain.Transaction;
 import com.app.service.AuthorizationService;
 import lombok.AllArgsConstructor;

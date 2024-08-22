@@ -15,11 +15,14 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
-@SpringBootTest(classes = AuthorizationService.class)
+@SpringBootTest(classes = {AuthorizationService.class, DebitService.class})
 public class AuthorizationServiceTest {
 
     @Autowired
     private AuthorizationService authorizationService;
+
+    @Autowired
+    private DebitService debitService;
 
     @MockBean
     private RedisTemplate<String, Object> redisTemplate;
