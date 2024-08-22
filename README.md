@@ -9,14 +9,14 @@ Java foi escolhida entre as linguagens propostas devido ao meu domínio sobre a 
 ### Estrutura do Código
 Utilizei uma estrutura comum, baseada no padrão MVC, onde a requisição é inicialmente recebida pelo controller, que aciona um serviço (service) para avaliar as regras de negócio, realizar validações e operações no banco de dados, e, em seguida, retornar a resposta conforme solicitado.
 
-1 - Package domain: Modelei meus objetos de domínio, que no caso são Transaction e Account
-2 - Package entities: Modelei minhas entidades que no caso serão persistidas para e posteriormente resgatadas com intuituo de atender as questões do projeto.
-3 - Package enums: Utilizei dois enums para melhor a visualização e segregação dos MCC e das Categorias. Isso ajudou a deixar o código mais limpo e legível.
-4 - Package infrastructure: Criei a inicialização e configuração do meu Redis, onde alem de iniciar criei uma massa de dados para facilitar testes e visualização da aplicação rodando em um ambiente produtivo.
-5 - Package repository: Fiz a criação básica do meu repositório que é utilizado na hora de resgatar os dados que estão presentes no meu Redis.
-6 - Package response: Objeto de resposta para ser utilizado pela API.
-7 - Package service: Dentro desse pacote está toda a regra de negócio para o processamento. Inicialmente utilizamos o AuthorizationService para recceber a requisição e conectar os dados de Transaction (request) com os demais dados a serem consultados no banco (Account). Após toda a regra ser processada, chamamos o DebitService para efetuar o processamento financeiro e concluir tudo que foi pedido.
-8 - Package test: Dentro desse pacote estão duas classes de testes, separadas por service e controller, que tem a função de testar a chamada pela API e também a chamada dos serviços (service) e validar as suas regras de negócio.
+1. Package domain: Modelei meus objetos de domínio, que no caso são Transaction e Account
+2. Package entities: Modelei minhas entidades que no caso serão persistidas para e posteriormente resgatadas com intuituo de atender as questões do projeto.
+3. Package enums: Utilizei dois enums para melhor a visualização e segregação dos MCC e das Categorias. Isso ajudou a deixar o código mais limpo e legível.
+4. Package infrastructure: Criei a inicialização e configuração do meu Redis, onde alem de iniciar criei uma massa de dados para facilitar testes e visualização da aplicação rodando em um ambiente produtivo.
+5. Package repository: Fiz a criação básica do meu repositório que é utilizado na hora de resgatar os dados que estão presentes no meu Redis.
+6. Package response: Objeto de resposta para ser utilizado pela API.
+7. Package service: Dentro desse pacote está toda a regra de negócio para o processamento. Inicialmente utilizamos o AuthorizationService para recceber a requisição e conectar os dados de Transaction (request) com os demais dados a serem consultados no banco (Account). Após toda a regra ser processada, chamamos o DebitService para efetuar o processamento financeiro e concluir tudo que foi pedido.
+8. Package test: Dentro desse pacote estão duas classes de testes, separadas por service e controller, que tem a função de testar a chamada pela API e também a chamada dos serviços (service) e validar as suas regras de negócio.
 
 ### Uso do Maven
 A escolha do Maven se deu pelo meu conhecimento prévio da ferramenta, embora outras alternativas, como Gradle, também pudessem ter sido utilizadas.
