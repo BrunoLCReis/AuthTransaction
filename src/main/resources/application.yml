@@ -1,0 +1,11 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 2000 # Tempo limite de conexão em milissegundos
+    jedis:
+      pool:
+        max-active: 10
+        max-idle: 5
+        min-idle: 1
+        max-wait: 2000 # Tempo máximo de espera em milissegundos
